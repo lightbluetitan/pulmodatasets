@@ -1,0 +1,8 @@
+bibentry(
+  bibtype = "Manual",
+  title = "PulmoDataSets: A Curated Collection of Pulmonary and Respiratory Disease Datasets",
+  author = person(given = "Renzo", family = "Caceres Rossi"),
+  year = 2025,
+  note = "R package version 0.1.0",
+  url = "https://github.com/lightbluetitan/pulmodatasets"
+)
