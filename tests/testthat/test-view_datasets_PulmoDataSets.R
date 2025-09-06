@@ -1,5 +1,5 @@
 # PulmoDataSets - A Curated Collection of Pulmonary and Respiratory Disease Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -15,19 +15,19 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-# view_datasets_pulmo
+# view_datasets_PulmoDataSets
 
 library(testthat)
 library(PulmoDataSets)
 
-test_that("view_datasets_pulmo works when package is loaded", {
-  result <- view_datasets_pulmo()
+test_that("view_datasets_PulmoDataSets works when package is loaded", {
+  result <- view_datasets_PulmoDataSets()
   expect_type(result, "character")
   expect_true(length(result) > 0)
 })
 
-test_that("view_datasets_pulmo prints correct message", {
-  output <- capture_messages(view_datasets_pulmo())
+test_that("view_datasets_PulmoDataSets prints correct message", {
+  output <- capture_messages(view_datasets_PulmoDataSets())
   expect_match(
     output[1],
     "Datasets available in the 'PulmoDataSets' package:",
@@ -35,8 +35,8 @@ test_that("view_datasets_pulmo prints correct message", {
   )
 })
 
-test_that("view_datasets_pulmo returns expected datasets", {
-  datasets <- view_datasets_pulmo()
+test_that("view_datasets_PulmoDataSets returns expected datasets", {
+  datasets <- view_datasets_PulmoDataSets()
   expected_datasets <- c(
     "respiratory_infections_df",
     "tuberculosis_vaccine_df",
@@ -71,7 +71,6 @@ test_that("view_datasets_pulmo returns expected datasets", {
     "air_polution_mortality_df",
     "children_respiratory_rates_df",
     "smoking_lung_cancer_df",
-    "resp_hosp_no2_daily_df",
     "child_wheeze_pollution_df",
     "patients_lung_diseases_tbl_df",
     "asthma_patients_tbl_df"

@@ -54,7 +54,7 @@ library(PulmoDataSets)
 
 # List all datasets in the package
 
-view_datasets_pulmo()
+view_datasets_PulmoDataSets()
 
 # Load dataset
 

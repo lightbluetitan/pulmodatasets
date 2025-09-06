@@ -103,9 +103,6 @@ This package, `PulmoDataSets`, includes datasets sourced from various R packages
 - **smoking_lung_cancer_df**: 
   Originally case1803 from the Sleuth3 package, licensed under GPL (>= 2). The dataset name has been changed to 'smoking_lung_cancer_df' to indicate that this dataset is a data frame object. 
 
-- **resp_hosp_no2_daily_df**: 
-  Originally rhospno2 from the collin package, licensed under GPL-3. The dataset name has been changed to 'resp_hosp_no2_daily_df' to indicate that this dataset is a data frame object. 
-
 - **child_wheeze_pollution_df**: 
   Originally wheeze from the geessbin package, licensed under GPL (>= 2). The dataset name has been changed to 'child_wheeze_pollution_df' to indicate that this dataset is a data frame object. 
 

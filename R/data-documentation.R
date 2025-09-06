@@ -1,5 +1,5 @@
 # PulmoDataSets - A Curated Collection of Pulmonary and Respiratory Disease Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -963,35 +963,6 @@ NULL
 #' @usage data(smoking_lung_cancer_df)
 #' @export
 load("data/smoking_lung_cancer_df.rda")
-NULL
-
-
-#' Respiratory Hospital Admissions
-#'
-#' This dataset, resp_hosp_no2_daily_df, is a data frame containing simulated data
-#' for daily respiratory hospital admissions and ambient NO2 concentrations over 10 years.
-#'
-#' The dataset name has been kept as 'resp_hosp_no2_daily_df' to avoid confusion with other datasets
-#' in the R ecosystem. This naming convention helps distinguish this dataset as part of the
-#' PulmoDataSets package and assists users in identifying its specific characteristics.
-#' The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
-#' in any way.
-#'
-#' @name resp_hosp_no2_daily_df
-#' @format A data frame with 3652 observations and 7 variables:
-#' \describe{
-#'   \item{date}{Calendar date (Date object)}
-#'   \item{t}{Time index (integer vector)}
-#'   \item{year}{Year (numeric vector)}
-#'   \item{dow}{Day of week (factor with 7 levels)}
-#'   \item{temp}{Temperature (numeric vector)}
-#'   \item{no2}{NO2 concentration in μg/m3 (integer vector)}
-#'   \item{hresp}{Respiratory hospital admissions count (numeric vector)}
-#' }
-#' @source Data taken from the collin package version 0.0.4
-#' @usage data(resp_hosp_no2_daily_df)
-#' @export
-load("data/resp_hosp_no2_daily_df.rda")
 NULL
 
 

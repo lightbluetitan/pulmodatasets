@@ -1,5 +1,5 @@
 # PulmoDataSets - A Curated Collection of Pulmonary and Respiratory Disease Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -14,6 +14,7 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 
 # respiratory_clinical_trial_df
 

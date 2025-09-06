@@ -1,5 +1,5 @@
 # PulmoDataSets - A Curated Collection of Pulmonary and Respiratory Disease Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -26,10 +26,10 @@
 #' @examples
 #' if (requireNamespace("PulmoDataSets", quietly = TRUE)) {
 #'   library(PulmoDataSets)
-#'   view_datasets_pulmo()
+#'   view_datasets_PulmoDataSets()
 #' }
 #' @export
-view_datasets_pulmo <- function() {
+view_datasets_PulmoDataSets <- function() {
   # Check if the package is loaded
   if (!"PulmoDataSets" %in% .packages()) {
     stop("The 'PulmoDataSets' package must be loaded to view its datasets.")

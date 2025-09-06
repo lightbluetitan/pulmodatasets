@@ -1,0 +1,1575 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\makeatletter\@ifl@t@r\fmtversion{2018/04/01}{}{\usepackage[utf8]{inputenc}}\makeatother
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `PulmoDataSets'}}
+\par\bigskip{\large \today}
+\end{center}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {PulmoDataSets: A Curated Collection of Pulmonary and Respiratory Disease Datasets}}}{}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdfauthor = {Renzo Caceres Rossi}}}{}
+\begin{description}
+\raggedright{}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{A Curated Collection of Pulmonary and Respiratory Disease Datasets}
+\item[Version]\AsIs{0.1.0}
+\item[Maintainer]\AsIs{Renzo Caceres Rossi }\email{arenzocaceresrossi@gmail.com}\AsIs{}
+\item[Description]\AsIs{Provides a comprehensive and curated collection of datasets related to the lungs, respiratory system, and associated diseases. 
+This package includes epidemiological, clinical, experimental, and simulated datasets on conditions such as lung cancer, asthma, COPD, 
+tuberculosis, whooping cough, pneumonia, influenza, and other respiratory illnesses. 
+It is designed to support data exploration, statistical modeling, teaching, and research in pulmonary medicine, public health, 
+environmental epidemiology, and respiratory disease surveillance.}
+\item[License]\AsIs{GPL-3}
+\item[Language]\AsIs{en}
+\item[URL]\AsIs{}\url{https://github.com/lightbluetitan/pulmodatasets}\AsIs{, }\url{https://lightbluetitan.github.io/pulmodatasets/}\AsIs{}
+\item[BugReports]\AsIs{}\url{https://github.com/lightbluetitan/pulmodatasets/issues}\AsIs{}
+\item[Encoding]\AsIs{UTF-8}
+\item[LazyData]\AsIs{true}
+\item[Depends]\AsIs{R (>= 4.1.0)}
+\item[Imports]\AsIs{utils}
+\item[Suggests]\AsIs{ggplot2,
+dplyr,
+testthat (>= 3.0.0),
+knitr,
+rmarkdown}
+\item[RoxygenNote]\AsIs{7.3.2}
+\item[Config/testthat/edition]\AsIs{3}
+\item[VignetteBuilder]\AsIs{knitr}
+\end{description}
+\Rdcontents{Contents}
+\HeaderA{air\_polution\_mortality\_df}{Air Pollution and Mortality}{air.Rul.polution.Rul.mortality.Rul.df}
+%
+\begin{Description}
+This dataset, air\_polution\_mortality\_df, is a data frame containing information from
+an early study exploring the relationship between air pollution and mortality across
+5 Standard Metropolitan Statistical Areas in the U.S. between 1959 and 1961.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(air_polution_mortality_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 60 observations and 7 variables:
+\begin{description}
+
+\item[City] Metropolitan area (factor with 60 levels)
+\item[Mort] Mortality rate (numeric vector)
+\item[Precip] Annual precipitation in inches (integer vector)
+\item[Educ] Median years of education (numeric vector)
+\item[NonWhite] Percentage of non-white population (numeric vector)
+\item[NOX] Nitrogen oxide concentration (integer vector)
+\item[SO2] Sulfur dioxide concentration (integer vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'air\_polution\_mortality\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the Sleuth3 package version 1.0-6
+\end{Source}
+\HeaderA{ai\_ipn\_performance\_dt}{AI Assessment of Pulmonary Nodules}{ai.Rul.ipn.Rul.performance.Rul.dt}
+%
+\begin{Description}
+This dataset, ai\_ipn\_performance\_dt, is a data table containing performance metrics
+of an artificial intelligence tool for risk stratification of 200 indeterminate
+pulmonary nodules (IPNs) on chest CT scans.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(ai_ipn_performance_dt)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data table with 200 observations and 2 variables:
+\begin{description}
+
+\item[cancer] Malignancy status (0 = benign, 1 = malignant) (integer)
+\item[rating] AI risk assessment rating (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'ai\_ipn\_performance\_dt' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'dt' indicates that this is a
+data table object. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the R4HCR package version 0.1
+\end{Source}
+\HeaderA{asthma\_patients\_tbl\_df}{COPD and Asthma Patients}{asthma.Rul.patients.Rul.tbl.Rul.df}
+%
+\begin{Description}
+This dataset, asthma\_patients\_tbl\_df, is a tibble containing clinical information
+about 300 asthma (COPD) patients tracked over 3 years, including demographics,
+smoking status, diagnosis details, medications, and peak flow measurements.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(asthma_patients_tbl_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A tibble with 300 observations and 7 variables:
+\begin{description}
+
+\item[Patient\_ID] Unique patient identifier (numeric)
+\item[Age] Patient age in years (numeric)
+\item[Gender] Patient gender (character)
+\item[Smoking\_Status] Current/Former/Never smoker status (character)
+\item[Asthma\_Diagnosis] Specific asthma/COPD diagnosis (character)
+\item[Medication] Prescribed treatment regimen (character)
+\item[Peak\_Flow] Peak expiratory flow rate (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'asthma\_patients\_tbl\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'tbl\_df' indicates that the dataset is a tibble object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from Kaggle: https://www.kaggle.com/datasets/jatinthakur706/copd-asthma-patient-dataset
+\end{Source}
+\HeaderA{bronchitis\_Cardiff\_df}{Chronic Bronchitis in Cardiff Men}{bronchitis.Rul.Cardiff.Rul.df}
+%
+\begin{Description}
+This dataset, bronchitis\_Cardiff\_df, is a data frame containing information from a study
+assessing the effects of smoking and pollution on bronchitis diagnosis in a sample of 212 men
+from Cardiff.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(bronchitis_Cardiff_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 212 observations and 4 variables:
+\begin{description}
+
+\item[cig] Number of cigarettes smoked per day (numeric)
+\item[poll] Pollution exposure level (numeric)
+\item[r] Bronchitis diagnosis (0 = no, 1 = yes) (integer)
+\item[rfac] Bronchitis diagnosis as a factor with 2 levels (factor)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'bronchitis\_Cardiff\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the gamclass package version 0.62.5
+\end{Source}
+\HeaderA{chicago\_pollution\_df}{Chicago Mortality and Pollution}{chicago.Rul.pollution.Rul.df}
+%
+\begin{Description}
+This dataset, chicago\_pollution\_df, is a data frame containing daily mortality, weather,
+and pollution data for Chicago from 1987 to 2000 from the National Morbidity, Mortality
+and Air Pollution Study (NMMAPS). It includes all-cause mortality, cardiovascular and
+respiratory deaths, temperature, humidity, and pollution levels (PM10 and ozone).
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(chicago_pollution_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 5114 observations and 14 variables:
+\begin{description}
+
+\item[date] Date (Date object)
+\item[time] Time index (integer vector)
+\item[year] Year (numeric vector)
+\item[month] Month (numeric vector)
+\item[doy] Day of year (integer vector)
+\item[dow] Day of week (factor with 7 levels)
+\item[death] All-cause mortality count (integer vector)
+\item[cvd] Cardiovascular mortality count (integer vector)
+\item[resp] Respiratory mortality count (integer vector)
+\item[temp] Temperature (numeric vector)
+\item[dptp] Dew point temperature (numeric vector)
+\item[rhum] Relative humidity (numeric vector)
+\item[pm10] PM10 pollution level (numeric vector)
+\item[o3] Ozone level (numeric vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'chicago\_pollution\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the dlnm package version 2.4.10
+\end{Source}
+\HeaderA{children\_respiratory\_rates\_df}{Children Respiratory Rates Data}{children.Rul.respiratory.Rul.rates.Rul.df}
+%
+\begin{Description}
+This dataset, children\_respiratory\_rates\_df, is a data frame containing respiratory rate
+measurements from 618 Italian children aged between 15 days and 3 years, collected to
+establish normal respiratory rate distributions for clinical assessment.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(children_respiratory_rates_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 618 observations and 2 variables:
+\begin{description}
+
+\item[Age] Child's age in days (numeric vector)
+\item[Rate] Respiratory rate in breaths per minute (integer vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'children\_respiratory\_rates\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the Sleuth3 package version 1.0-6
+\end{Source}
+\HeaderA{child\_wheeze\_pollution\_df}{Child Wheeze and Pollution}{child.Rul.wheeze.Rul.pollution.Rul.df}
+%
+\begin{Description}
+This dataset, child\_wheeze\_pollution\_df, is a data frame containing longitudinal data
+on wheezing status for 16 children measured four times yearly at ages 9 through 12,
+with associated pollution exposure information.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(child_wheeze_pollution_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 64 observations and 5 variables:
+\begin{description}
+
+\item[ID] Child identifier (integer vector)
+\item[Wheeze] Wheezing status (integer vector)
+\item[City] City identifier (integer vector)
+\item[Age] Child's age in years (integer vector)
+\item[Smoke] Smoking exposure indicator (integer vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'child\_wheeze\_pollution\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the geessbin package version 1.0.0
+\end{Source}
+\HeaderA{danish\_lung\_incidence\_df}{Lung cancer in 4 Danish cities 1968-71}{danish.Rul.lung.Rul.incidence.Rul.df}
+%
+\begin{Description}
+This dataset, danish\_lung\_incidence\_df, is a data frame containing counts of
+incident lung cancer cases and population size in four neighbouring Danish cities
+by age group from 1968 to 1971.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(danish_lung_incidence_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 24 observations and 4 variables:
+\begin{description}
+
+\item[city] City of observation (factor with 4 levels)
+\item[age] Age group (factor with 6 levels)
+\item[pop] Population size (integer)
+\item[cases] Number of incident lung cancer cases (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'danish\_lung\_incidence\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the ISwR package version 2.0-10
+\end{Source}
+\HeaderA{engwales\_cancer\_mortality\_df}{UK lung and nasal cancer deaths 1936–80}{engwales.Rul.cancer.Rul.mortality.Rul.df}
+%
+\begin{Description}
+This dataset, engwales\_cancer\_mortality\_df, is a data frame containing England and Wales
+mortality rates from lung cancer, nasal cancer, and all causes between 1936 and 1980.
+The 1936 rates are repeated as 1931 rates in order to accommodate follow-up for the nickel study.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(engwales_cancer_mortality_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 150 observations and 5 variables:
+\begin{description}
+
+\item[year] Year of observation (numeric)
+\item[age] Age group (numeric)
+\item[lung] Lung cancer mortality rate (numeric)
+\item[nasal] Nasal cancer mortality rate (numeric)
+\item[other] Mortality rate from all other causes (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'engwales\_cancer\_mortality\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the ISwR package version 2.0-10
+\end{Source}
+\HeaderA{influenza\_us\_1975\_df}{US 1975-76 Influenza-Like Illness Data}{influenza.Rul.us.Rul.1975.Rul.df}
+%
+\begin{Description}
+This dataset, influenza\_us\_1975\_df, is a data frame containing influenza-like illness (ILI)
+data for the lower 48 US states and District of Columbia during the 1975-76 season,
+which was dominated by the A H3N2 Victoria strain.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(influenza_us_1975_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 49 observations (states + DC) and 7 variables:
+\begin{description}
+
+\item[State] State identifier (integer)
+\item[Acronym] State abbreviation (factor with 51 levels)
+\item[Pop] State population (integer)
+\item[Latitude] Geographic latitude (numeric)
+\item[Longitude] Geographic longitude (numeric)
+\item[Start] Week of season start (integer)
+\item[Peak] Week of peak activity (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'influenza\_us\_1975\_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'df' indicates that this is a
+standard data frame. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the epimdr package version 0.6-5
+\end{Source}
+\HeaderA{lungca\_cancer\_deaths\_df}{Male Lung Cancer by Smoking Duration}{lungca.Rul.cancer.Rul.deaths.Rul.df}
+%
+\begin{Description}
+This dataset, lungca\_cancer\_deaths\_df, is a data frame containing data on
+man-years of smoking risk and observed lung cancer deaths among male smokers.
+It includes 63 observations across 4 variables measuring smoking exposure
+and mortality outcomes.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(lungca_cancer_deaths_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 63 observations and 4 variables:
+\begin{description}
+
+\item[yrs\_smk] Years of smoking (factor with 9 levels)
+\item[pys] Person-years of smoking exposure (numeric)
+\item[num\_cigs] Number of cigarettes smoked daily (factor with 7 levels)
+\item[deaths] Number of lung cancer deaths (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'lungca\_cancer\_deaths\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a standard data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the R4HCR package version 0.1
+\end{Source}
+\HeaderA{lung\_cancer\_survival\_df}{Lung Cancer Survival Data}{lung.Rul.cancer.Rul.survival.Rul.df}
+%
+\begin{Description}
+This dataset, lung\_cancer\_survival\_df, is a data frame containing survival information
+for 228 lung cancer patients, with 10 clinical variables including survival time,
+patient status, age, gender, performance scores, and nutritional indicators.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(lung_cancer_survival_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 228 observations (patients) and 10 variables:
+\begin{description}
+
+\item[inst] Institution code where patient was treated (numeric)
+\item[time] Survival time in days from diagnosis (numeric)
+\item[status] Censoring status (1 = censored, 2 = died) (numeric)
+\item[age] Patient age at diagnosis in years (numeric)
+\item[sex] Gender (1 = male, 2 = female) (numeric)
+\item[ph.ecog] ECOG performance score (0=asymptomatic to 4=fully disabled) (numeric)
+\item[ph.karno] Karnofsky performance score (0-100) as rated by physician (numeric)
+\item[pat.karno] Karnofsky performance score (0-100) as self-reported by patient (numeric)
+\item[meal.cal] Daily calories consumed at meals (numeric)
+\item[wt.loss] Weight loss in last six months (pounds) (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'lung\_cancer\_survival\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the acro package version 0.1.4
+\end{Source}
+\HeaderA{lung\_nodules\_detection\_dt}{Incidental or Screen-Detected Lung Nodules}{lung.Rul.nodules.Rul.detection.Rul.dt}
+%
+\begin{Description}
+This dataset, lung\_nodules\_detection\_dt, is a data table containing clinical
+and radiological characteristics of 999 pulmonary nodules (up to 15mm in size) detected
+on routine chest CT scans from 3 UK academic centers.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(lung_nodules_detection_dt)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data table with 999 observations and 8 variables:
+\begin{description}
+
+\item[sex] Patient sex (factor with 2 levels)
+\item[age] Patient age in years (numeric)
+\item[num.annotated] Number of annotated nodules (numeric)
+\item[location] Nodule location (factor with 6 levels)
+\item[spiculate] Spiculation status (factor with 2 levels)
+\item[smoke.status] Smoking history (factor with 5 levels)
+\item[diameter] Nodule diameter in mm (numeric)
+\item[malignant] Malignancy status (0=benign, 1=malignant) (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'lung\_nodules\_detection\_dt' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'dt' indicates
+that this is a data table object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the R4HCR package version 0.1
+\end{Source}
+\HeaderA{neonatal\_intubation\_times\_df}{Neonatal Intubation Simulation}{neonatal.Rul.intubation.Rul.times.Rul.df}
+%
+\begin{Description}
+This dataset, neonatal\_intubation\_times\_df, is a data frame containing execution times (in seconds)
+for specific actions performed by 37 midwife students during a high-fidelity neonatal resuscitation
+simulation. The simulation was video recorded, and each critical action in the intubation process
+was tagged for timing analysis.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(neonatal_intubation_times_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 37 observations and 7 variables:
+\begin{description}
+
+\item[id] Participant ID (integer)
+\item[deci\_intub] Time to decision to intubate (seconds) (integer)
+\item[stop\_ventil] Time to stop ventilation (seconds) (integer)
+\item[blade\_in] Time to insert laryngoscope blade (seconds) (integer)
+\item[insert\_tube] Time to insert endotracheal tube (seconds) (integer)
+\item[blade\_out] Time to remove laryngoscope blade (seconds) (integer)
+\item[restart\_ventil] Time to restart ventilation (seconds) (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'neonatal\_intubation\_times\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the ViSiElse package version 1.2.2
+\end{Source}
+\HeaderA{nicotine\_gum\_df}{Nicotine Gum and Smoking Cessation}{nicotine.Rul.gum.Rul.df}
+%
+\begin{Description}
+This dataset, nicotine\_gum\_df, is a data frame containing meta-analysis data
+on the effectiveness of nicotine gum for smoking cessation across 26 studies.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(nicotine_gum_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 26 observations (studies) and 4 variables:
+\begin{description}
+
+\item[qt] Number of successful quitters in treatment group (integer)
+\item[tt] Total participants in treatment group (integer)
+\item[qc] Number of successful quitters in control group (integer)
+\item[tc] Total participants in control group (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'nicotine\_gum\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content
+has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the HSAUR3 package version 1.0-15
+\end{Source}
+\HeaderA{ohio\_children\_wheeze\_df}{Ohio Children Wheeze Status}{ohio.Rul.children.Rul.wheeze.Rul.df}
+%
+\begin{Description}
+This dataset, ohio\_children\_wheeze\_df, is a data frame containing wheeze status data
+from 2148 observations of children in Ohio. The data are part of a subset from the Six-City Study,
+a longitudinal study examining the health effects of air pollution on children.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(ohio_children_wheeze_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 2148 observations and 4 variables:
+\begin{description}
+
+\item[resp] Wheeze status (0 = no wheeze, 1 = wheeze) (integer)
+\item[id] Child identifier (integer)
+\item[age] Age of the child in years (integer)
+\item[smoke] Parental smoking status (0 = no, 1 = yes) (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'ohio\_children\_wheeze\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the geepack package version 1.3.12
+\end{Source}
+\HeaderA{patients\_lung\_diseases\_tbl\_df}{Lung Disease Patients}{patients.Rul.lung.Rul.diseases.Rul.tbl.Rul.df}
+%
+\begin{Description}
+This dataset, patients\_lung\_diseases\_tbl\_df, is a tibble containing detailed clinical information
+about 5,200 patients with various lung conditions, including demographics, smoking status,
+lung capacity measurements, disease types, treatments received, hospital visits, and recovery status.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(patients_lung_diseases_tbl_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A tibble with 5,200 observations and 8 variables:
+\begin{description}
+
+\item[Age] Patient age in years (numeric)
+\item[Gender] Patient gender (character)
+\item[Smoking Status] Smoker or non-smoker status (character)
+\item[Lung Capacity] Measured lung function (numeric)
+\item[Disease Type] Specific lung condition (character)
+\item[Treatment Type] Therapy, medication or surgery received (character)
+\item[Hospital Visits] Number of hospital visits (numeric)
+\item[Recovered] Recovery status (character)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'patients\_lung\_diseases\_tbl\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'tbl\_df' indicates that the dataset is a tibble object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from Kaggle: https://www.kaggle.com/datasets/samikshadalvi/lungs-diseases-dataset
+\end{Source}
+\HeaderA{pneumonia\_influenza\_ts}{Monthly Pneumonia and Influenza Deaths in the U.S.}{pneumonia.Rul.influenza.Rul.ts}
+%
+\begin{Description}
+This dataset, pneumonia\_influenza\_ts, is a time series containing monthly rates
+of pneumonia and influenza deaths in the United States from 1968 to 1978.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(pneumonia_influenza_ts)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A time series with 132 monthly observations from January 1968 to December 1978:
+\begin{description}
+
+\item[Value] Mortality rate (numeric vector)
+\item[Time] Monthly index from 1968 to 1978 (time series vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'pneumonia\_influenza\_ts' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'ts' indicates that the dataset is a time series. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the astsa package version 2.2
+\end{Source}
+\HeaderA{PulmoDataSets}{PulmoDataSets: A Curated Collection of Pulmonary and Respiratory Disease Datasets}{PulmoDataSets}
+\aliasA{PulmoDataSets-package}{PulmoDataSets}{PulmoDataSets.Rdash.package}
+%
+\begin{Description}
+
+This package provides a wide variety of datasets focused on the lungs, respiratory system, tuberculosis, whooping cough, pneumonia, influenza and associated diseases.
+
+\end{Description}
+%
+\begin{Details}
+PulmoDataSets: A Curated Collection of Pulmonary and Respiratory Disease Datasets
+
+
+
+A Curated Collection of Pulmonary and Respiratory Disease Datasets.
+\end{Details}
+%
+\begin{Author}
+
+\strong{Maintainer}: Renzo Caceres Rossi \email{arenzocaceresrossi@gmail.com}
+
+\end{Author}
+%
+\begin{SeeAlso}
+
+Useful links:
+\begin{itemize}
+
+\item{} \url{https://github.com/lightbluetitan/pulmodatasets}
+
+\end{itemize}
+
+
+\end{SeeAlso}
+\HeaderA{respiratory\_clinical\_trial\_df}{Respiratory Clinical Trial}{respiratory.Rul.clinical.Rul.trial.Rul.df}
+%
+\begin{Description}
+This dataset, respiratory\_clinical\_trial\_df, is a data frame containing information from a clinical trial
+of patients with respiratory illness, where 111 patients from two different clinics were randomized to receive
+either placebo or an active treatment. Patients were examined at baseline and at four visits during treatment.
+The respiratory status was determined at each visit, with 1 representing good status and 0 representing poor status.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(respiratory_clinical_trial_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 444 observations and 8 variables:
+\begin{description}
+
+\item[center] Study identifier (integer vector)
+\item[id] Patient identifier (integer vector)
+\item[treat] Treatment group (factor with 2 levels)
+\item[sex] Patient sex (factor with 2 levels)
+\item[age] Patient age in years (integer vector)
+\item[baseline] Baseline respiratory status (integer vector)
+\item[visit] Visit number (integer vector)
+\item[outcome] Respiratory status (integer vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'respiratory\_clinical\_trial\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the geepack package version 1.3.12
+\end{Source}
+\HeaderA{respiratory\_infections\_df}{Azithromycin for Respiratory Infections}{respiratory.Rul.infections.Rul.df}
+%
+\begin{Description}
+This dataset, respiratory\_infections\_df, is a data frame containing results from 15 clinical trials
+comparing the effectiveness of azithromycin versus amoxycillin or amoxycillin/clavulanic acid (amoxyclav)
+in the treatment of acute lower respiratory tract infections.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(respiratory_infections_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 15 observations and 11 variables:
+\begin{description}
+
+\item[author] Study author(s) (character vector)
+\item[year] Year of publication (integer vector)
+\item[ai] Number of successful treatments in azithromycin group (integer vector)
+\item[n1i] Total number of participants in azithromycin group (integer vector)
+\item[ci] Number of successful treatments in control group (integer vector)
+\item[n2i] Total number of participants in control group (integer vector)
+\item[age] Patient age characteristics (character vector)
+\item[diag.ab] Number diagnosed with acute bronchitis (integer vector)
+\item[diag.cb] Number diagnosed with chronic bronchitis (integer vector)
+\item[diag.pn] Number diagnosed with pneumonia (integer vector)
+\item[ctrl] Type of control treatment (character vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'respiratory\_infections\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the metadat package version 1.4-0
+\end{Source}
+\HeaderA{respiratory\_trial\_df}{Respiratory Illness Clinical Trial}{respiratory.Rul.trial.Rul.df}
+%
+\begin{Description}
+This dataset, respiratory\_trial\_df, is a data frame containing the respiratory status
+of patients recruited for a randomized clinical multicenter trial, with 555 observations
+across 111 subjects.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(respiratory_trial_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 555 observations and 7 variables:
+\begin{description}
+
+\item[centre] Study center (factor with 2 levels)
+\item[treatment] Treatment group (factor with 2 levels)
+\item[gender] Patient gender (factor with 2 levels)
+\item[age] Patient age in years (numeric)
+\item[status] Respiratory status (factor with 2 levels)
+\item[month] Follow-up month (ordered factor with 5 levels)
+\item[subject] Patient identifier (factor with 111 levels)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'respiratory\_trial\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content
+has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the HSAUR3 package version 1.0-15
+\end{Source}
+\HeaderA{respiratory\_trial\_outcomes\_df}{Ordinal respiratory outcomes}{respiratory.Rul.trial.Rul.outcomes.Rul.df}
+%
+\begin{Description}
+This dataset, respiratory\_trial\_outcomes\_df, is a data frame containing outcome data
+from a randomized clinical trial described in Miller et al. (1993) evaluating a new
+treatment for respiratory disorder. The study includes 111 patients who were randomly assigned
+to one of two treatments (active or placebo). The patients were followed up at four visits,
+and their response status was classified on an ordinal scale at each visit.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(respiratory_trial_outcomes_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 111 observations and 5 variables:
+\begin{description}
+
+\item[y1] Ordinal response at visit 1 (integer)
+\item[y2] Ordinal response at visit 2 (integer)
+\item[y3] Ordinal response at visit 3 (integer)
+\item[y4] Ordinal response at visit 4 (integer)
+\item[trt] Treatment group (0 = placebo, 1 = active) (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'respiratory\_trial\_outcomes\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the geepack package version 1.3.12
+\end{Source}
+\HeaderA{resp\_hosp\_no2\_daily\_df}{Respiratory Hospital Admissions}{resp.Rul.hosp.Rul.no2.Rul.daily.Rul.df}
+%
+\begin{Description}
+This dataset, `resp\_hosp\_no2\_daily\_df`, is a data frame containing simulated data
+for daily respiratory hospital admissions and ambient NO2 concentrations over 10 years.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(resp_hosp_no2_daily_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 3652 observations and 7 variables:
+\begin{description}
+
+\item[date] Calendar date (Date object)
+\item[t] Time index (integer vector)
+\item[year] Year (numeric vector)
+\item[dow] Day of week (factor with 7 levels)
+\item[temp] Temperature (numeric vector)
+\item[no2] NO2 concentration in \bsl{}eqn\bsl{}mu g/m\textasciicircum{}3 (integer vector)
+\item[hresp] Respiratory hospital admissions count (numeric vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'resp\_hosp\_no2\_daily\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the collin package version 0.0.4
+\end{Source}
+\HeaderA{smoking\_doctors\_df}{Smoking Deaths Among Doctors (British)}{smoking.Rul.doctors.Rul.df}
+%
+\begin{Description}
+This dataset, smoking\_doctors\_df, is a data frame containing data from a study
+on smoking habits and coronary artery disease mortality among British doctors.
+It includes 10 observations across 5 variables representing person-years of
+observation and deaths during the study period.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(smoking_doctors_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 10 observations and 5 variables:
+\begin{description}
+
+\item[age] Age group (factor with 5 levels)
+\item[smoke] Smoking status (numeric)
+\item[n] Number of person-years at risk (numeric)
+\item[y] Number of deaths from coronary artery disease (numeric)
+\item[ns] Standardized mortality ratio (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'smoking\_doctors\_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'df' indicates that this is a
+standard data frame. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the boot package version 1.3-31
+\end{Source}
+\HeaderA{smoking\_lung\_cancer\_df}{Smoking and Lung Cancer}{smoking.Rul.lung.Rul.cancer.Rul.df}
+%
+\begin{Description}
+This dataset, smoking\_lung\_cancer\_df, is a data frame containing data from a retrospective
+case-control study comparing smoking status between 86 lung cancer patients and 86 controls.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(smoking_lung_cancer_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 2 observations and 3 variables:
+\begin{description}
+
+\item[Smoking] Smoking status (factor with 2 levels: "NonSmokers", "Smokers")
+\item[Cancer] Number of lung cancer cases (integer vector)
+\item[Control] Number of control cases (integer vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'smoking\_lung\_cancer\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the Sleuth3 package version 1.0-6
+\end{Source}
+\HeaderA{smoking\_UK\_tbl\_df}{UK Smoking Habits}{smoking.Rul.UK.Rul.tbl.Rul.df}
+%
+\begin{Description}
+This dataset, smoking\_UK\_tbl\_df, is a tibble containing survey data on smoking habits
+from the UK, with demographic characteristics and tobacco consumption patterns
+from 1,691 respondents.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(smoking_UK_tbl_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A tibble with 1,691 observations and 12 variables:
+\begin{description}
+
+\item[gender] Gender of respondent (factor with 2 levels)
+\item[age] Age in years (integer)
+\item[marital\_status] Marital status (factor with 5 levels)
+\item[highest\_qualification] Highest education qualification (factor with 8 levels)
+\item[nationality] Nationality (factor with 8 levels)
+\item[ethnicity] Ethnic group (factor with 7 levels)
+\item[gross\_income] Income bracket (factor with 10 levels)
+\item[region] UK region (factor with 7 levels)
+\item[smoke] Smoking status (factor with 2 levels)
+\item[amt\_weekends] Cigarettes smoked on weekends (integer)
+\item[amt\_weekdays] Cigarettes smoked on weekdays (integer)
+\item[type] Type of tobacco used (factor with 5 levels)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'smoking\_UK\_tbl\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package. The suffix 'tbl\_df' indicates that this is a tibble data frame.
+The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the openintro package version 2.5.0
+\end{Source}
+\HeaderA{smoking\_youth\_tbl\_df}{Youth Smoking and Lung Function}{smoking.Rul.youth.Rul.tbl.Rul.df}
+%
+\begin{Description}
+This dataset, smoking\_youth\_tbl\_df, is a tibble containing data from the Childhood
+Respiratory Disease Study collected in the late 1970s, examining the effects of
+smoking and second-hand smoke exposure on pulmonary function in 654 youths.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(smoking_youth_tbl_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A tibble with 654 observations and 5 variables:
+\begin{description}
+
+\item[age] Age in years (integer)
+\item[FEV] Forced Expiratory Volume in liters (numeric)
+\item[height] Height in centimeters (numeric)
+\item[sex] Sex of participant (character)
+\item[smoker] Smoking status (character)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'smoking\_youth\_tbl\_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'tbl\_df' indicates that this is a
+tibble data frame. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the LSTbook package version 0.6
+\end{Source}
+\HeaderA{tlc\_lung\_capacity\_df}{Total Lung Capacity}{tlc.Rul.lung.Rul.capacity.Rul.df}
+%
+\begin{Description}
+This dataset, tlc\_lung\_capacity\_df, is a data frame containing data on pretransplant total
+lung capacity (TLC) measured by whole-body plethysmography for recipients of heart-lung transplants.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(tlc_lung_capacity_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 32 observations and 4 variables:
+\begin{description}
+
+\item[age] Age in years (integer)
+\item[sex] Sex (0 = female, 1 = male) (integer)
+\item[height] Height in centimeters (integer)
+\item[tlc] Total lung capacity in liters (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'tlc\_lung\_capacity\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the ISwR package version 2.0-10
+\end{Source}
+\HeaderA{tuberculosis\_vaccine\_df}{BCG Vaccine Against Tuberculosis}{tuberculosis.Rul.vaccine.Rul.df}
+%
+\begin{Description}
+This dataset, tuberculosis\_vaccine\_df, is a data frame containing results from 13 clinical trials
+examining the effectiveness of the Bacillus Calmette-Guerin (BCG) vaccine against tuberculosis.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(tuberculosis_vaccine_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 13 observations and 9 variables:
+\begin{description}
+
+\item[trial] Trial identifier number (integer vector)
+\item[author] Study author(s) (character vector)
+\item[year] Year of publication (integer vector)
+\item[tpos] Number of TB positive cases in vaccinated group (integer vector)
+\item[tneg] Number of TB negative cases in vaccinated group (integer vector)
+\item[cpos] Number of TB positive cases in control group (integer vector)
+\item[cneg] Number of TB negative cases in control group (integer vector)
+\item[ablat] Absolute latitude of study location (integer vector)
+\item[alloc] Method of treatment allocation (character vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'tuberculosis\_vaccine\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the metadat package version 1.4-0
+\end{Source}
+\HeaderA{UK\_female\_lung\_deaths\_ts}{UK Female Lung Disease Deaths}{UK.Rul.female.Rul.lung.Rul.deaths.Rul.ts}
+%
+\begin{Description}
+This dataset, UK\_female\_lung\_deaths\_ts, is a time series object containing monthly deaths
+from bronchitis, emphysema and asthma in the UK from 1974 to 1979, for females.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(UK_female_lung_deaths_ts)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A time series (ts) object with 72 monthly observations from 1974 to 1979.
+\begin{description}
+
+\item[value] Number of deaths (numeric vector)
+\item[time] Time index (1974 to 1979)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'UK\_female\_lung\_deaths\_ts' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'ts' indicates that the dataset is a time series object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the datasets package (R version 4.5.0), fdeaths dataset
+\end{Source}
+\HeaderA{UK\_male\_lung\_deaths\_ts}{UK Male Lung Disease Deaths}{UK.Rul.male.Rul.lung.Rul.deaths.Rul.ts}
+%
+\begin{Description}
+This dataset, UK\_male\_lung\_deaths\_ts, is a time series object containing monthly deaths
+from bronchitis, emphysema and asthma in the UK from 1974 to 1979, for males.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(UK_male_lung_deaths_ts)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A time series (ts) object with 72 monthly observations from 1974 to 1979.
+\begin{description}
+
+\item[value] Number of deaths (numeric vector)
+\item[time] Time index (1974 to 1979)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'UK\_male\_lung\_deaths\_ts' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'ts' indicates that the dataset is a time series object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the datasets package (R version 4.5.0), mdeaths dataset
+\end{Source}
+\HeaderA{USMortality\_df}{US Mortality Rates by Cause and Gender}{USMortality.Rul.df}
+%
+\begin{Description}
+This dataset, USMortality\_df, is a data frame containing mortality rates across all ages
+in the USA by cause of death, sex, rural and urban status from 2011 to 2013. The data
+represent national aggregate rates under the Department of Health and Human Services (HHS).
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(USMortality_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 40 observations and 5 variables:
+\begin{description}
+
+\item[Status] Rural/Urban status (factor with 2 levels)
+\item[Sex] Gender (factor with 2 levels)
+\item[Cause] Cause of death (factor with 10 levels)
+\item[Rate] Mortality rate (numeric vector)
+\item[SE] Standard error of mortality rate (numeric vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'USMortality\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a standard data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the lattice package version 0.22-6
+\end{Source}
+\HeaderA{USRegionalMortality\_df}{US Regional Mortality Rates by Cause and Gender}{USRegionalMortality.Rul.df}
+%
+\begin{Description}
+This dataset, USRegionalMortality\_df, is a data frame containing region-wise mortality rates
+across all ages in the USA by cause of death, sex, rural and urban status from 2011 to 2013.
+The data represent rates for each administrative region under the Department of Health and Human Services (HHS).
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(USRegionalMortality_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 400 observations and 6 variables:
+\begin{description}
+
+\item[Region] HHS administrative region (factor with 10 levels)
+\item[Status] Rural/Urban status (factor with 2 levels)
+\item[Sex] Gender (factor with 2 levels)
+\item[Cause] Cause of death (factor with 10 levels)
+\item[Rate] Mortality rate (numeric vector)
+\item[SE] Standard error of mortality rate (numeric vector)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'USRegionalMortality\_df' to avoid confusion with other datasets
+in the R ecosystem. This naming convention helps distinguish this dataset as part of the
+PulmoDataSets package and assists users in identifying its specific characteristics.
+The suffix 'df' indicates that the dataset is a data frame. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the lattice package version 0.22-6
+\end{Source}
+\HeaderA{veterans\_lung\_cancer\_df}{Veterans Administration Lung Cancer Study}{veterans.Rul.lung.Rul.cancer.Rul.df}
+%
+\begin{Description}
+This dataset, veterans\_lung\_cancer\_df, is a data frame containing information from a randomized trial
+of two treatment regimens for lung cancer. This is a standard survival analysis data set.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(veterans_lung_cancer_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 137 observations and 8 variables:
+\begin{description}
+
+\item[trt] Treatment group (numeric)
+\item[celltype] Cell type (factor with 4 levels)
+\item[time] Survival time in days (numeric)
+\item[status] Censoring status (numeric)
+\item[karno] Karnofsky performance score (numeric)
+\item[diagtime] Time from diagnosis to randomization (numeric)
+\item[age] Age in years (numeric)
+\item[prior] Number of prior therapies (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'veterans\_lung\_cancer\_df' to avoid confusion
+with other datasets in the R ecosystem. This naming convention helps distinguish
+this dataset as part of the PulmoDataSets package. The suffix 'df' indicates
+that this is a data frame object. The original content has not been modified
+in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the survival package version 3.8-3
+\end{Source}
+\HeaderA{view\_datasets\_pulmo}{View Available Datasets in PulmoDataSets}{view.Rul.datasets.Rul.pulmo}
+%
+\begin{Description}
+This function lists all datasets available in the 'PulmoDataSets' package.
+If the 'PulmoDataSets' package is not loaded, it stops and shows an error message.
+If no datasets are available, it returns a message and an empty vector.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+view_datasets_pulmo()
+\end{verbatim}
+\end{Usage}
+%
+\begin{Value}
+A character vector with the names of the available datasets.
+If no datasets are found, it returns an empty character vector.
+\end{Value}
+%
+\begin{Examples}
+\begin{ExampleCode}
+if (requireNamespace("PulmoDataSets", quietly = TRUE)) {
+  library(PulmoDataSets)
+  view_datasets_pulmo()
+}
+\end{ExampleCode}
+\end{Examples}
+\HeaderA{whooping\_cough\_dk\_df}{Copenhagen Whooping Cough 1900-1937}{whooping.Rul.cough.Rul.dk.Rul.df}
+%
+\begin{Description}
+This dataset, whooping\_cough\_dk\_df, is a data frame containing weekly incidence data
+of whooping cough in Copenhagen, Denmark between January 1900 and December 1937.
+It includes 1,982 weekly observations across 8 demographic and epidemiological variables.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(whooping_cough_dk_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 1,982 weekly observations and 8 variables:
+\begin{description}
+
+\item[date] Date of observation (factor)
+\item[births] Number of births (integer)
+\item[day] Day of month (integer)
+\item[month] Month (integer 1-12)
+\item[year] Year (integer 1900-1937)
+\item[cases] Number of whooping cough cases (integer)
+\item[deaths] Number of whooping cough deaths (integer)
+\item[popsize] Population size (numeric)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'whooping\_cough\_dk\_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'df' indicates that this is a
+standard data frame. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the epimdr package version 0.6-5
+\end{Source}
+\HeaderA{whooping\_cough\_phila\_df}{Philadelphia Whooping Cough 1925-1947}{whooping.Rul.cough.Rul.phila.Rul.df}
+%
+\begin{Description}
+This dataset, whooping\_cough\_phila\_df, is a data frame containing weekly incidence
+data of whooping cough in Philadelphia between 1925 and 1947, with 1,200 weekly
+observations across 5 variables.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(whooping_cough_phila_df)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A data frame with 1,200 weekly observations and 5 variables:
+\begin{description}
+
+\item[YEAR] Year of observation (integer)
+\item[WEEK] Week number (integer)
+\item[PHILADELPHIA] Weekly incidence count of whooping cough cases (integer)
+\item[TIME] Time index (numeric)
+\item[TM] Time marker (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'whooping\_cough\_phila\_df' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'df' indicates that this is a
+standard data frame. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the epimdr package version 0.6-5
+\end{Source}
+\HeaderA{whooping\_cough\_ts}{Whooping Cough Deaths in London (1740-1881)}{whooping.Rul.cough.Rul.ts}
+%
+\begin{Description}
+This dataset, whooping\_cough\_ts, is a time series object containing annual counts
+of deaths from whooping cough in London from 1740 to 1881, with three measurement
+variables recorded each year.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+data(whooping_cough_ts)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Format}
+A multivariate time series with 142 annual observations from 1740 to 1881
+and 3 variables:
+\begin{description}
+
+\item[wcough] Number of whooping cough deaths (integer)
+\item[ratio] Death ratio (numeric)
+\item[alldeaths] Total deaths from all causes (integer)
+
+\end{description}
+
+\end{Format}
+%
+\begin{Details}
+The dataset name has been kept as 'whooping\_cough\_ts' to avoid confusion with other
+datasets in the R ecosystem. This naming convention helps distinguish this dataset
+as part of the PulmoDataSets package. The suffix 'ts' indicates that this is a
+time series object. The original content has not been modified in any way.
+\end{Details}
+%
+\begin{Source}
+Data taken from the DAAG package version 1.25.6
+\end{Source}
+\printindex{}
+\end{document}

@@ -1,16 +1,16 @@
 Package: PulmoDataSets
 Type: Package
 Title: A Curated Collection of Pulmonary and Respiratory Disease Datasets
-Version: 0.1.0
+Version: 0.2.0
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
 Description: Provides a comprehensive and curated collection of datasets related to the lungs, respiratory system, and associated diseases. 
-    This package includes epidemiological, clinical, experimental, and simulated datasets on conditions such as lung cancer, asthma, COPD, 
-    tuberculosis, whooping cough, pneumonia, influenza, and other respiratory illnesses. 
+    This package includes epidemiological, clinical, experimental, and simulated datasets on conditions such as lung cancer, asthma, 
+    Chronic Obstructive Pulmonary Disease (COPD), tuberculosis, whooping cough, pneumonia, influenza, and other respiratory illnesses. 
     It is designed to support data exploration, statistical modeling, teaching, and research in pulmonary medicine, public health, 
     environmental epidemiology, and respiratory disease surveillance.
 License: GPL-3
 Language: en
-URL: https://github.com/lightbluetitan/pulmodatasets
+URL: https://github.com/lightbluetitan/pulmodatasets, https://lightbluetitan.github.io/pulmodatasets/
 BugReports: https://github.com/lightbluetitan/pulmodatasets/issues
 Encoding: UTF-8
 LazyData: true
@@ -28,7 +28,8 @@ Authors@R:
         given = "Renzo",
         family = "Caceres Rossi",
         role = c("aut", "cre"),
-        email = "arenzocaceresrossi@gmail.com"
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
     )
 RoxygenNote: 7.3.2
 Config/testthat/edition: 3
