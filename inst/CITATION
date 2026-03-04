@@ -7,6 +7,7 @@ bibentry(
     comment = c(ORCID = "0009-0005-0744-854X")
   ),
   year = 2025,
-  note = "R package version 0.2.0",
-  url = "https://github.com/lightbluetitan/pulmodatasets"
+  note = "R package version 0.2.1",
+  url = "https://github.com/lightbluetitan/pulmodatasets",
+  doi = "10.32614/CRAN.package.PulmoDataSets"
 )

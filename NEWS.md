@@ -1,3 +1,12 @@
+# PulmoDataSets 0.2.1
+
+## Minor Changes
+
+- Updated `inst/CITATION` file to include the official CRAN DOI 
+  (`10.32614/CRAN.package.PulmoDataSets`) for proper citation support.
+
+---
+
 # PulmoDataSets 0.2.0
 
 ## Breaking Changes

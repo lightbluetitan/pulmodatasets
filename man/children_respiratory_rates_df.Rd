@@ -2,7 +2,7 @@
 % Please edit documentation in R/data-documentation.R
 \name{children_respiratory_rates_df}
 \alias{children_respiratory_rates_df}
-\title{Children Respiratory Rates Data}
+\title{Children Respiratory Rates}
 \format{
 A data frame with 618 observations and 2 variables:
 \describe{

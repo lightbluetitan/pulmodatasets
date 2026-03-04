@@ -1,5 +1,10 @@
 # PulmoDataSets
 
+[![CRAN](https://www.r-pkg.org/badges/version/PulmoDataSets)](https://CRAN.R-project.org/package=PulmoDataSets)
+[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/PulmoDataSets)](https://CRAN.R-project.org/package=PulmoDataSets)
+[![DOI](https://img.shields.io/badge/DOI-10.32614/CRAN.package.PulmoDataSets-blue)](https://doi.org/10.32614/CRAN.package.PulmoDataSets)
+[![License: GPL-3](https://img.shields.io/badge/License-GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 The **PulmoDataSets** package offers a thematically rich and diverse collection of datasets focused on the **lungs, respiratory system, and associated diseases**. 
 It includes data related to chronic respiratory conditions such as **asthma, chronic bronchitis, and COPD**, 
 as well as infectious diseases like **tuberculosis, pneumonia, influenza, and whooping cough**.

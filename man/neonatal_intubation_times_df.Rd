@@ -2,7 +2,7 @@
 % Please edit documentation in R/data-documentation.R
 \name{neonatal_intubation_times_df}
 \alias{neonatal_intubation_times_df}
-\title{Neonatal Intubation Simulation}
+\title{Neonatal Intubation Times}
 \format{
 A data frame with 37 observations and 7 variables:
 \describe{

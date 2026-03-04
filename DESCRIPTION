@@ -1,7 +1,7 @@
 Package: PulmoDataSets
 Type: Package
 Title: A Curated Collection of Pulmonary and Respiratory Disease Datasets
-Version: 0.2.0
+Version: 0.2.1
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
 Description: Provides a comprehensive and curated collection of datasets related to the lungs, respiratory system, and associated diseases. 
     This package includes epidemiological, clinical, experimental, and simulated datasets on conditions such as lung cancer, asthma, 

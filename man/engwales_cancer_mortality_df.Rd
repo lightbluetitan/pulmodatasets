@@ -2,7 +2,7 @@
 % Please edit documentation in R/data-documentation.R
 \name{engwales_cancer_mortality_df}
 \alias{engwales_cancer_mortality_df}
-\title{UK lung and nasal cancer deaths 1936–80}
+\title{UK Lung and Nasal Cancer Mortality}
 \format{
 A data frame with 150 observations and 5 variables:
 \describe{

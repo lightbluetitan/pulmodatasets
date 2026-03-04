@@ -1,5 +1,5 @@
 # PulmoDataSets - A Curated Collection of Pulmonary and Respiratory Disease Datasets
-# Version 0.2.0
+# Version 0.2.1
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -565,7 +565,7 @@ NULL
 
 
 
-#' UK lung and nasal cancer deaths 1936–80
+#' UK Lung and Nasal Cancer Mortality
 #'
 #' This dataset, engwales_cancer_mortality_df, is a data frame containing England and Wales
 #' mortality rates from lung cancer, nasal cancer, and all causes between 1936 and 1980.
@@ -619,7 +619,7 @@ load("data/tlc_lung_capacity_df.rda")
 NULL
 
 
-#' Neonatal Intubation Simulation
+#' Neonatal Intubation Times
 #'
 #' This dataset, neonatal_intubation_times_df, is a data frame containing execution times (in seconds)
 #' for specific actions performed by 37 midwife students during a high-fidelity neonatal resuscitation
@@ -913,7 +913,7 @@ load("data/air_polution_mortality_df.rda")
 NULL
 
 
-#' Children Respiratory Rates Data
+#' Children Respiratory Rates
 #'
 #' This dataset, children_respiratory_rates_df, is a data frame containing respiratory rate
 #' measurements from 618 Italian children aged between 15 days and 3 years, collected to
